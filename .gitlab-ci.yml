@@ -27,6 +27,7 @@ transforming:
     - git remote set-url origin git@github.com:u2u-chain/u2u-explorer.git
     - git fetch
     - git branch -v -a
+    - git pull
     - git checkout origin main
     - ls -lh
     - ./fix.sh
