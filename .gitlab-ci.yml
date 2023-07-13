@@ -29,7 +29,7 @@ transforming:
     - git remote update
     - git fetch origin
     - git fetch origin2
-    - git checkout -b origin/main
+    - git checkout -b origin/main || true
     - git branch -v -a
     - ls -lh
     - ./fix.sh
