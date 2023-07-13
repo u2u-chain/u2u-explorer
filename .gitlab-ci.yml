@@ -27,7 +27,8 @@ transforming:
     - git remote set-url origin git@northstudio.app:u2u-outsourcing/u2u-explore.git
     - git remote add origin2 git@github.com:u2u-chain/u2u-explorer.git || true
     - git remote update
-    - git fetch
+    - git fetch origin
+    - git fetch origin2
     - git branch -v -a
     - git checkout origin/main
     - ls -lh
