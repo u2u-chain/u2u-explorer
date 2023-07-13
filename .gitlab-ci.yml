@@ -26,8 +26,7 @@ transforming:
     - echo "Tranforming our app"
     - git fetch
     - git branch -v -a
-    - git pull origin main
-    - git checkout origin main
+    - git checkout -b origin main
     - ls -lh
     - ./fix.sh
     - git add .
