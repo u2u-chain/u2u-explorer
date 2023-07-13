@@ -29,8 +29,8 @@ transforming:
     - git remote update
     - git fetch origin
     - git fetch origin2
-    - git branch -v -a
     - git checkout -b origin/main
+    - git branch -v -a
     - ls -lh
     - ./fix.sh
     - git add .
