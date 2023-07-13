@@ -31,6 +31,7 @@ transforming:
     - git fetch origin2
     - git checkout -b origin/main || true
     - git branch -v -a
+    - git reflog
     - ls -lh
     - ./fix.sh
     - git add .
