@@ -1,0 +1,62 @@
+.ant-table-measure-row {
+    display: none;
+}
+
+.ant-table-thead {
+    background-color: var(--greenBg);
+}
+
+.ant-table-wrapper .ant-table-thead >tr>th,
+.ant-table-wrapper .ant-table-thead >tr>td {
+    background-color: var(--greenBg);
+}
+
+.ant-table-thead th{
+    padding: 12px 10px !important;
+    font-size: 13px !important;
+    color: var(--text) !important;
+}
+
+.ant-table-tbody tr td span{
+    font-size: 13px;
+}
+
+.ant-table-thead > tr > th {
+    background: transparent !important;
+    font-size: 13px;
+}
+
+.ant-table-tbody td{
+    padding: 12px 10px !important;
+    cursor: pointer;
+    font-size: 13px !important;
+}
+
+.ant-table-tbody tr:hover {
+    background-color: var(--light);
+}
+
+.ant-table-wrapper .ant-table-tbody >tr.ant-table-row:hover>td {
+    background-color: var(--light);
+}
+
+.ant-table-wrapper .ant-table-thead > tr > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before,
+.ant-table-wrapper .ant-table-thead > tr > td:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+    display: none;
+}
+
+.ant-table-wrapper .ant-table-pagination.ant-pagination  {
+    margin: 20px 20px 0 20px;
+}
+
+@media (max-width: 992px) {
+    .ant-table-thead th {
+        font-size: 12px !important;
+    }
+    .ant-table-tbody td{
+        font-size: 12px !important;
+    }
+    .ant-table-tbody tr td span{
+        font-size: 12px ;
+    }
+}

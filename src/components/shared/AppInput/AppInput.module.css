@@ -1,0 +1,13 @@
+.inputWrapper {
+    margin-top: 15px;
+}
+
+.input {
+    background: transparent;
+    color: #fff !important;
+}
+
+.focused {
+    background: white;
+    color: #000 !important;
+}

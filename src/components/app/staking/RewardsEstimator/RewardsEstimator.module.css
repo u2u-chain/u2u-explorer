@@ -1,0 +1,59 @@
+.wrapper {
+    margin-top: 22px;
+}
+
+.stake {
+    background: var(--light);
+    padding: 30px 20px
+}
+
+.stakeContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stakeContent select {
+    width: 100%;
+}
+
+.stakeContent input {
+    text-align: right;
+}
+
+.inforReward {
+    margin: 30px 0 16px 0;
+}
+
+.inforReward .title {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inforReward .coin {
+    font-size: 26px;
+    font-family: var(--font_b);
+    font-weight: normal;
+    color: var(--green);
+}
+
+.inforReward .u2u {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.description {
+    color: var(--gray);
+    font-style: italic;
+}
+
+@media (max-width: 1200px) {
+    .inforReward .title {
+        font-size: 13px;
+    }
+    .inforReward .coin {
+        font-size: 20px;
+    }
+
+}

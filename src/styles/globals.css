@@ -1,0 +1,222 @@
+@import "./customTable.css";
+@import "./customCard.css";
+
+@font-face {
+  font-family: StyreneAWeb-Light;
+  src: url(../assets/fonts/StyreneAWeb-Light.ttf);
+}
+
+@font-face {
+  font-family: StyreneAWeb-Bold;
+  src: url(../assets/fonts/StyreneAWeb-Bold.ttf);
+}
+
+@font-face {
+  font-family: StyreneAWeb-Medium;
+  src: url(../assets/fonts/StyreneAWeb-Medium.ttf);
+}
+
+@font-face {
+  font-family: StyreneAWeb-Regular;
+  src: url(../assets/fonts/StyreneAWeb-Regular.ttf);
+}
+
+@font-face {
+  font-family: SFMonoRegular;
+  src: url(../assets/fonts/SFMonoRegular.woff);
+}
+
+html{scroll-behavior:smooth;}
+*{margin:0;padding:0;}
+li{list-style-type:none;}
+a, img{transition: all 0.25s ease;}
+a:focus{outline:none;}
+a{color:var(--green);text-decoration:none;}
+a:hover{text-decoration:underline;color:var(--green);}
+.padding0{padding:0;}
+
+:root {
+  --dark: #031D26;
+  --light: #f8f9fa;
+  --text: #4c535e;
+  --title: #242424;
+  --border: #dbdfea;
+  --shadow: #93cab9;
+  --lighter: #f1f3f7;
+
+  --gradient: linear-gradient(to top, #16936c, #62ceac);
+  --gradient_light: linear-gradient(to top, #f0f0f0, #ffffff);
+  --green: #16936c;
+  --greenCode: #17956e;
+  --greenBg: #e3ffec;
+  --white: #fff;
+  --red: #ff6161;
+  --redBg: #ffdfdf;
+  --pink: #d371ff;
+  --gray: #77838f;
+
+  --font: "StyreneAWeb-Regular", "Segoe UI", Roboto, Arial, sans-serif;
+  --font_m: "StyreneAWeb-Medium", "Segoe UI", Roboto, Arial, sans-serif;
+  --font_l: "StyreneAWeb-Light", "Segoe UI", Roboto, Arial, sans-serif;
+  --font_b: "StyreneAWeb-Bold", "Segoe UI", Roboto, Arial, sans-serif;
+  --font_code: "SFMonoRegular", "Segoe UI", Roboto, Arial, sans-serif;
+
+  --maxWidth: 1320px;
+}
+
+html, body{
+  font-family: var(--font);
+  font-size: 13px;
+  color:var(--text);
+}
+
+a {
+  text-decoration: none;
+}
+
+.ant-typography a:hover {
+  color: var(--green);
+}
+
+.text-green {
+  color: var(--green);
+}
+
+.text-red{
+  color:var(--red) !important;
+}
+
+.text-gray{
+  color:var(--gray) !important;
+}
+
+.text-size {
+  font-size: 12px !important;
+}
+
+.bg-green{
+  background:var(--green) !important;
+}
+
+.bg-red{
+  background:var(--red) !important;
+}
+
+/*Flex*/
+.d-flex {
+  display: flex;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.flex-align {
+  align-items: center;
+}
+
+#nprogress .bar {
+  background: var(--green) !important;
+}
+
+/*custom menu*/
+.ant-menu-light .ant-menu-item:hover:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected) {
+    color: inherit;
+}
+
+.ant-menu-horizontal .ant-menu-item{
+  padding-inline: 10px !important;
+}
+
+/*custom button*/
+.ant-btn-primary  {
+  box-shadow: none;
+}
+
+/*table*/
+.customTable{
+  width: 100%;
+}
+
+.customTable tbody tr {
+  border-bottom: 1px solid var(--border);
+}
+
+.customTable tbody tr:last-child {
+  border-bottom: none;
+}
+
+.customTable tbody tr td {
+  padding: 12px 10px;
+}
+
+.customTable tbody tr td:first-child {
+  min-width: 160px;
+}
+
+/*custom input*/
+.ant-input {
+  color: var(--white);
+}
+
+.ant-input:focus {
+  color: #000;
+}
+
+.ant-input-affix-wrapper >input.ant-input {
+  background-color: transparent ;
+}
+
+
+@media (max-width: 992px) {
+  .customTable tbody tr td span {
+    font-size: 12px;
+  }
+  .customTable tbody tr td article {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 1320px) {
+  :root {
+    --maxWidth: 1140px;
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --maxWidth: 992px;
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    --maxWidth: 720px;
+  }
+
+  .customTable tbody tr td:first-child {
+    width: 0 !important;
+    min-width: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --maxWidth: 540px;
+  }
+}
+
+
+

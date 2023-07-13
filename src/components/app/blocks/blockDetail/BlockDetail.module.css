@@ -1,0 +1,83 @@
+.dFlex {
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+.blockTable {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.blockTable table{
+    width: 100% !important;
+}
+
+.groupActionBlock{
+    display:flex;
+    gap: 4px;
+    margin-left:12px;
+}
+
+.groupActionBlock div{
+    background:var(--greenBg);
+    border:0;
+    outline:none;
+    padding: 2px 8px;
+    border-radius:5px;
+    transition:all 0.2s ease;
+    width: max-content;
+    cursor: pointer;
+}
+
+.groupActionBlock div:hover{
+    background:var(--green);
+}
+
+.groupActionBlock div:hover svg path{
+    fill:var(--white) !important;
+}
+
+
+.extraData{
+    line-height:1.85;
+    margin-bottom:0;
+    background:var(--light);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    padding: 20px;
+    color: var(--gray) !important;
+    font-family: var(--font_code);
+}
+
+.extraData span {
+    white-space: normal;
+}
+
+.hash {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.code {
+    font-family: var(--font_code);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0!important;
+    overflow: hidden!important;
+    color: var(--gray);
+    background: #f1f3f7;
+    cursor: pointer;
+}
+
+.code:hover {
+    background: rgba(22,147,108,0.2);
+    color: var(--dark);
+}
+
+@media (max-width: 772px) {
+.blockTable table {
+width: max-content !important;
+}
+}

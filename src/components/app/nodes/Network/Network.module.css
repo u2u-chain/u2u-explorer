@@ -1,0 +1,39 @@
+.image {
+    background: var(--white) url(../../../../assets/images/bg-network.png) no-repeat bottom right;
+    background-size: 300px;
+}
+
+.network {
+    margin-bottom: 30px;
+}
+
+.network .title {
+    font-size: 15px;
+    color: var(--gray);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.network .coin {
+    color: var(--title);
+    font-size: 26px;
+    font-family: var(--font_b);
+    font-weight: normal;
+}
+
+.network .u2u {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--gray);
+}
+
+
+@media (max-width: 768px) {
+    .network .title {
+        font-size: 13px;
+    }
+    .network .coin {
+        font-size: 20px;
+    }
+
+}

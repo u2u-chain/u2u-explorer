@@ -1,0 +1,52 @@
+.title {
+  font-size: 18px;
+  font-family: var(--font_b)
+}
+.transferTable {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.transferTable table{
+  width: 100% !important;
+}
+
+.transfer{
+  padding-left:20px;
+}
+
+.transfer li{
+  position:relative;
+}
+
+.transfer li button,
+.transfer li b{
+  width:80px;
+  text-align:left;
+}
+
+.transfer li:after{
+  background:url('../../../../../assets/images/arrow-c.svg') no-repeat;
+  width:28px;
+  height:19px;
+  position:absolute;
+  content:'';
+  top:6px;
+  left:-30px;
+}
+
+
+.transfer li small{
+  margin-left:15px;
+}
+
+.tableTransfer tr td:last-child{
+  width:580px;
+}
+
+@media (max-width: 992px) {
+  .transferTable table{
+    width: max-content !important;
+  }
+}
+

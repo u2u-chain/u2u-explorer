@@ -1,0 +1,9 @@
+.notFound {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.notFound h1 {
+    font-size: 18px !important;
+}

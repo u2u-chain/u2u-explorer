@@ -1,0 +1,82 @@
+.numberWrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.numberWrapper > div {
+  display: flex;
+  flex-direction: column;
+
+}
+.block {
+  height: 38px;
+  width: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--greenBg);
+  text-transform: uppercase;
+  border-radius: 7px;
+  font-size: 11px !important;
+  flex: none;
+}
+
+.transfersWrapper {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.transfers {
+  color: var(--green);
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+.transfers:hover {
+  text-decoration: underline;
+  color: var(--green);
+}
+
+.time {
+  font-size: 11px !important;
+  color: var(--gray);
+}
+.time:hover + .transfers:hover{
+  text-decoration: none;
+  color: red;
+  font-size: 12px !important;
+}
+
+.button {
+  margin-top: 36px;
+  margin-bottom: 20px;
+}
+
+.button button {
+  width: 100%;
+}
+
+.coinU2u{
+  display:block;
+  float:right;
+  margin-bottom:0;
+  background-color:var(--greenBg);
+  position: relative;
+  padding: 5px 10px 5px 20px;
+  border-radius: 4px;
+}
+
+.coinU2u:after{
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  //border-top: 17px solid transparent;
+  //border-bottom: 17px solid transparent;
+  //border-left: 12px solid var(--white);
+}

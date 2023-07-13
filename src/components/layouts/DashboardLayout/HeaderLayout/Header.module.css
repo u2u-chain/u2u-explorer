@@ -1,0 +1,75 @@
+.headerWrapper {
+  background: url(../../../../assets/images/bg-header-2.webp) no-repeat center center;
+  padding: 10px 0 30px;
+  background-size: cover;
+  width: 100%;
+  min-height: 138px;
+}
+
+.header {
+  max-width: var(--maxWidth);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.logo {
+  max-width: 160px;
+  height: 38px;
+  margin-top: 15px;
+}
+
+.informationU2 {
+  display: block;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 5px 15px;
+  border-radius: 30px;
+  width: max-content;
+}
+
+.iconGas {
+  width: 13px;
+  height: auto;
+  margin-left: 4px;
+}
+
+.menu {
+  background-color: transparent !important;
+  display: flex;
+  justify-content: flex-end;
+  height: max-content;
+  font-size: 14px !important;
+}
+
+.input {
+  margin-top: 15px;
+}
+
+.menuIcon {
+  float: right;
+  margin-top: 8px;
+}
+.menuIcon img{
+  width: 38px;
+  height: 38px;
+}
+
+.drawerWrapper {
+  background: url(../../../../assets/images/bg-uniultra.webp) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.drawerButtonClose {
+  padding: 10px 14px;
+}
+
+@media (max-width: 767px){
+  .menuIcon {
+    position: absolute;
+    top: -94px;
+    right: 12px;
+  }
+}

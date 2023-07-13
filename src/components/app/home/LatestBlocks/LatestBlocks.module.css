@@ -1,0 +1,80 @@
+.numberWrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.refreshPaused {
+  font-size: 11px !important;
+  margin-right: 10px;
+  color: var(--gray);
+}
+
+.numberWrapper > div {
+  display: flex;
+  flex-direction: column;
+
+}
+.block {
+  height: 38px;
+  width: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--greenBg);
+  text-transform: uppercase;
+  border-radius: 7px;
+  font-size: 11px !important;
+  flex: none;
+}
+
+.hashWrapper {
+  font-size: 12px !important;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  flex-wrap: wrap;
+}
+
+.hash {
+  white-space: nowrap;
+  overflow: hidden;
+  color: var(--green);
+  max-width: 200px;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+.time {
+  font-size: 11px !important;
+  color: var(--gray);
+}
+
+.button {
+  margin-top: 36px;
+  margin-bottom: 20px;
+}
+
+.button button{
+  width: 100%;
+}
+
+.coinU2u{
+  display:block;
+  float:right;
+  margin-bottom:0;
+  background-color:var(--greenBg);
+  position: relative;
+  padding: 5px 10px 5px 20px;
+  border-radius: 4px;
+}
+
+.coinU2u:after{
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  /*border-top: 17px solid transparent;*/
+  /*border-bottom: 17px solid transparent;*/
+  /*border-left: 12px solid var(--white);*/
+}

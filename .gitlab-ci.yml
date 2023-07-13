@@ -1,0 +1,36 @@
+image: node:lts
+
+#before_script:
+#  - apt-get update
+#  - apt-get install -y zip unzip
+
+stages:
+  - transforming
+
+transforming:
+  stage: transforming
+  only:
+    - main
+  before_script:
+    - 'command -v ssh-agent >/dev/null || ( apk add --update openssh )'
+    - eval $(ssh-agent -s)
+    - echo "$SSH_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - ssh-keyscan github.com >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+  script:
+    - git config user.email "edward@uniultra.xyz"
+    - git config user.name "Edward Hedenberg"
+    - echo "Tranforming our app"
+    - git remote set-url origin git@github.com:u2u-chain/u2u-explorer.git
+    - git fetch
+    - git branch -v -a
+    - git checkout origin main
+    - ls -lh
+    - ./fix.sh
+    - git add .
+    - git commit --allow-empty -m "Update U2U Explorer"
+    - git push -u -f origin main
+

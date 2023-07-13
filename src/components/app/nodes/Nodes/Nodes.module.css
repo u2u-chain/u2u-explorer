@@ -1,0 +1,51 @@
+
+.groupStakeRange {
+    display:flex;
+    width:100%;
+    border:1px solid var(--border);
+    padding:2px;
+}
+
+.groupStakeRange  span{
+    display:block;
+    height:8px;
+    background:var(--border);
+}
+
+.hoverPopover{
+    padding-left:0;
+    margin-bottom:0;
+    width: auto;
+}
+
+.hoverPopover li span:first-child{
+    width:12px;
+    height:12px;
+    display:inline-block;
+    background:var(--border);
+    margin-right:5px;
+    position:relative;
+    top:2px;
+}
+
+.hoverPopover li span:last-child{
+    float:right;
+    margin-left:10px;
+}
+
+.hoverPopover li{
+    margin-bottom:5px;
+}
+
+.hoverPopover li span {
+    font-size: 11px;
+}
+
+.hoverPopover li b, .hoverPopover li strong{
+    font-family:var(--font_m);
+}
+
+.hoverPopover li span b{
+    margin-top: 3px;
+    display: inline-block;
+}
