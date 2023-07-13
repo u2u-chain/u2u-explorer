@@ -30,7 +30,7 @@ transforming:
     - git fetch origin
     - git fetch origin2
     - git branch -v -a
-    - git checkout origin/main
+    - git checkout -b origin/main
     - ls -lh
     - ./fix.sh
     - git add .
