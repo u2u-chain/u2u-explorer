@@ -35,5 +35,5 @@ transforming:
     - ./fix.sh
     - git add .
     - git commit --allow-empty -m "Update U2U Explorer"
-    - git push -u -f origin2 main
+    - git push -u origin2 main -f
 
